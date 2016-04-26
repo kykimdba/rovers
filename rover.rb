@@ -1,4 +1,5 @@
 class Rover
+
     #orientation => coordinate change expression to process M command
     MOVEMENTS = {
         :N => '@y += 1',
@@ -17,6 +18,7 @@ class Rover
     }
 
     attr_reader :x, :y, :orientation
+
     def initialize(x, y, orient)
         @x = x
         @y = y
